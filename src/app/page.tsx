@@ -1,10 +1,13 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Image from "next/image";
 import { Roadmap } from "./components/Roadmap";
+import { Ourtoken } from "./components/Ourtoken";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <Roadmap />
+    <main className="">
+      
+     <Ourtoken />
     </main>
   );
 }
