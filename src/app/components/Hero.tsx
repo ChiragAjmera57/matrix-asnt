@@ -7,30 +7,31 @@ export const Hero = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <div className="HeroSection">
-      <div className="NavBar">
-        <div className="navLogo">
-          <div className="Logo">
-            <Image alt="BITVERSE" src={navLogo} width="56" height="56" />
-          </div>
-          <div className="LogoName">
-            <div className="LogoFirst">
-              <span>BITVERSE</span>
-            </div>
-            <span>FINANCE</span>
-          </div>
-        </div>
-
-        <div className="navbarText">
-          <ul>
-            <li className="navbarText-about">About</li>
-            <li className="navbarText-product">Our Products</li>
-            <li className="navbarText-token">Token Utility</li>
-            <li className="navbarText-roadmap">Roadmap</li>
-          </ul>
-
-          <button className="cntwlt">Connect Wallet</button>
-        </div>
+     <div className="NavBar flex  flex-col lg:flex-row lg:justify-between lg:items-center py-4 lg:py-0">
+  <div className="navLogo flex items-center">
+    <div className="Logo mr-2">
+      <Image alt="BITVERSE" src={navLogo} width="56" height="56" />
+    </div>
+    <div className="LogoName">
+      <div className="LogoFirst">
+        <span>BITVERSE</span>
       </div>
+      <span>FINANCE</span>
+    </div>
+  </div>
+
+  <div className="navbarText mt-4 lg:mt-0 lg:flex lg:items-center lg:justify-center">
+    <ul className="flex flex-col lg:flex-row lg:space-x-4">
+      <li className="navbarText-about lg:text-lg">About</li>
+      <li className="navbarText-product lg:text-lg">Our Products</li>
+      <li className="navbarText-token lg:text-lg">Token Utility</li>
+      <li className="navbarText-roadmap lg:text-lg">Roadmap</li>
+    </ul>
+
+    <button className="mt-4 lg:mt-0 cntwlt lg:ml-6">Connect Wallet</button>
+  </div>
+</div>
+
       <div className="HeroHome">
         {/* <Image alt="square" src="/Union2.png" width={237} height={237} className="union"/> */}
 
