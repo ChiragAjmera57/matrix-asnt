@@ -2,12 +2,25 @@
 import Image from "next/image";
 import { Roadmap } from "./components/Roadmap";
 import { Ourtoken } from "./components/Ourtoken";
+import { OurProduct } from "./components/OurProduct";
+import { ContactUsBox } from "./components/ContactUsBox";
+import union from "../Asset/Union.png";
+import { BottomIcon } from "./components/BottomIcon";
 
 export default function Home() {
   return (
     <main className="">
-      
-     <Ourtoken />
+      <div className="bg-gradient-to-r from-YellowLightShade to-customLightDark">
+        <OurProduct />
+        <div className="relative">
+          <Ourtoken />
+          <div className="relative top-20 z-20 continuously-animation">
+            <Image src={union} alt="" />
+          </div>
+          <ContactUsBox />
+        </div>
+        <BottomIcon />
+      </div>
     </main>
   );
 }

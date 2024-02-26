@@ -19,7 +19,11 @@ const config: Config = {
       },
       colors:{
         customYellow: '#FECC00',
-        customGolden:'#F9D326'
+        customGolden:'#F9D326',
+        customLightYellow:'#FEA800',
+        customLightDark:'#0E0E0E',
+        YellowLightShade:'#b8a453',
+        blackWithgold:'#5e511a'
       }
     },
   },
