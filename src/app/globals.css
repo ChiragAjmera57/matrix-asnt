@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
-
-:root {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap")
+  @import
+  url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"):
+  root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -26,7 +26,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -42,10 +42,9 @@ body {
   height: 887px; */
   width: 100%;
   height: 100%;
-  }
+}
 
-.HeroSection::before{
-  
+.HeroSection::before {
   content: url("/backgroundHome.png");
   background: linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #0e0e0e 100%);
   opacity: 0.5;
@@ -93,62 +92,55 @@ body {
   margin-left: 32px;
 }
 
-.Logo{
+.Logo {
   width: 56px;
-height: 62px;
-
+  height: 62px;
 }
 
-.LogoName{
+.LogoName {
   margin-top: 12px;
   width: 101px;
-height:56px;
-gap: 7.2px;
-
+  height: 56px;
+  gap: 7.2px;
 }
 
-.LogoFirst{
+.LogoFirst {
   width: 97px;
   height: 12px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  
 }
 
-.LogoFirst > span{
+.LogoFirst > span {
   width: 97px;
-height: 12px;
-font-family: "Inter";
-font-size: 16px;
-font-weight: 700;
-line-height: 19px;
-letter-spacing: 0.16em;
-text-align: left;
-color: rgba(255, 198, 3, 1);
-
+  height: 12px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.16em;
+  text-align: left;
+  color: rgba(255, 198, 3, 1);
 }
 
 .LogoName > span {
   width: 101px;
-height: 6px;
-font-family: Inter;
-font-size: 9px;
-font-weight: 700;
-line-height: 11px;
-letter-spacing: 1.17em;
-text-align: left;
-color: rgba(255, 255, 255, 1);
-
-
+  height: 6px;
+  font-family: Inter;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 1.17em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
 }
 
-
-.navbarText{
+.navbarText {
   width: 792.8px;
-height: 56px;
-gap: 32px;
-display: flex;
-flex-direction: row;
-align-items: center;
+  height: 56px;
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navbarText > ul {
@@ -156,46 +148,41 @@ align-items: center;
   flex-direction: row;
   list-style: none;
   align-items: center;
-
 }
 
 .navbarText ul li {
   /* list-style: none; */
-/* height: 48.5px; */
-padding: 15px, 24.2px, 16.5px, 24px;
-border-radius: 16px;
-gap: 10.55px;
-cursor: pointer;
+  /* height: 48.5px; */
+  padding: 15px, 24.2px, 16.5px, 24px;
+  border-radius: 16px;
+  gap: 10.55px;
+  cursor: pointer;
 }
 
-
-.navbarText-about{
+.navbarText-about {
   width: 101.2px;
 }
 
-.navbarText-product{
+.navbarText-product {
   width: 162.2px;
 }
 
-.navbarText-token{
+.navbarText-token {
   width: 156.2px;
 }
 
-.navbarText-roadmap{
+.navbarText-roadmap {
   width: 130.2px;
 }
 
-
-.cntwlt{
+.cntwlt {
   width: 187px;
-height: 55px;
-left: 605.8px;
-border-radius: 10px;
-background: rgba(249, 211, 38, 1);
-color: rgba(0, 0, 0, 1);
-font-size: 16px;
-
-
+  height: 55px;
+  left: 605.8px;
+  border-radius: 10px;
+  background: rgba(249, 211, 38, 1);
+  color: rgba(0, 0, 0, 1);
+  font-size: 16px;
 }
 
 /* .union{
@@ -207,9 +194,7 @@ top: 50px;
 left: 0px;
 } */
 
-
-
-.titleBox{
+.titleBox {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -217,29 +202,112 @@ left: 0px;
   color: white;
   font-size: 24px;
   text-align: center;
+  
 }
 
-.titleText span{
+.titleText span {
   font-family: "Kanit", sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 85px;
-  color: rgba(240, 246, 251, 1);
+  /* color: rgba(240, 246, 251, 1); */
   line-height: 120px;
   align-items: start;
-  width:max-content;
-
+  width: max-content;
+ 
 }
-.titleText{
-
+.titleText {
   display: flex;
   flex-direction: column;
   text-align: left;
+  z-index: -1;
+  
 }
 
-.house{
+img.house {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation-name: houseImage;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(-10px -10px 15px 0px rgba(0, 0, 0, 0.76)), drop-shadow(10px 10px 15px 0px rgba(0, 0, 0, 0.76)) ;
+/* z-index: 10; */
+}
+
+.defi{
+  z-index: 100;
+  position: relative;
+  animation-name: title02;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.bitcoin{
+  color:rgba(254, 204, 0, 1);
+  position: relative;
+  animation-name: title02;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+
+
+.gateway{
+  /* left: 50%; */
+  position: relative;
+  animation-name: title01;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+
+.to{
+  left: 50%;
+  position: relative;
+  animation-name: title01;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+
+/* Animation Part */
+
+
+@keyframes title01 {
+  0%{
+    left: -50%;
+  }
+  95%{
+    left: 10%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+@keyframes title02 {
+  0%{
+    left: 50%;
+  }
+  95%{
+    left: -10%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+@keyframes houseImage {
+  0%{
+    top: 100%;
+  }
+  95%{
+    top: 40%;
+  }
+  100%{
+    top: 50%;
+  }
 }

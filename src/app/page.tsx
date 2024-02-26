@@ -32,17 +32,6 @@ export default function Home() {
           {/* <Image alt="square" src="/Union2.png" width={237} height={237} className="union"/> */}
 
           <div className="titleBox">
-            <div className="titleText">
-              <span className="gateway">YOUR GATEWAY</span>
-              
-                <span className="to">TO</span>
-                
-              <span className="defi on">DEFI ON
-              
-              <span className="bitcoin"> BITCOIN</span>
-              </span>
-            </div>
-          </div>
           <Image
                     src="/house.png"
                     width={320}
@@ -50,6 +39,20 @@ export default function Home() {
                     alt="bitcoin-house"
                     className="house"
                   />
+            <div className="titleText">
+              <span className="gateway">YOUR GATEWAY</span>
+              
+                <span className="to">TO</span>
+                <span className="bottom-heading">
+
+              <span className="defi on">DEFI ON
+              
+              </span>
+              <span className="bitcoin"> BITCOIN</span>
+                </span>
+            </div>
+          </div>
+          
         </div>
       </div>
     </main>
