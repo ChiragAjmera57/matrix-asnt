@@ -6,11 +6,13 @@ import { OurProduct } from "./components/OurProduct";
 import { ContactUsBox } from "./components/ContactUsBox";
 import union from "../Asset/Union.png";
 import { BottomIcon } from "./components/BottomIcon";
+import { Hero } from "./components/Hero";
 
 export default function Home() {
   return (
     <main className="">
-      <div className="bg-gradient-to-r from-YellowLightShade to-customLightDark">
+      <Hero />
+      <div className=" bg-gradient-to-r from-YellowLightShade to-customLightDark">
         <OurProduct />
         <div className="relative">
           <Ourtoken />

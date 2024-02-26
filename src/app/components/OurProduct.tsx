@@ -12,7 +12,7 @@ import Image from 'next/image'
 export const OurProduct = () => {
   return (
     <div className='relative scroll-animation'>
-      <div className='w-2/3 m-auto  flex-wrap '>
+      <div className='w-2/3 m-auto  flex-wrap pt-8'>
         <HeadingSnip title='Products' vectorLine={vectorLine} />
         <div className='main flex flex-wrap mt-8 m-auto'>
        <ProductCard vectorLine={cartLogo}  />
