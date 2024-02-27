@@ -1,59 +1,30 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Image from "next/image";
+import { Roadmap } from "./components/Roadmap";
+import { Ourtoken } from "./components/Ourtoken";
+import { OurProduct } from "./components/OurProduct";
+import { ContactUsBox } from "./components/ContactUsBox";
+import union from "../Asset/Union.png";
+import { BottomIcon } from "./components/BottomIcon";
+import { Hero } from "./components/Hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="HeroSection">
-        <div className="NavBar">
-          <div className="navLogo">
-            <div className="Logo">
-              <Image alt="BITVERSE" src="/navLogo.png" width="56" height="56" />
-            </div>
-            <div className="LogoName">
-              <div className="LogoFirst">
-                <span>BITVERSE</span>
-              </div>
-              <span>FINANCE</span>
-            </div>
-          </div>
 
-          <div className="navbarText">
-            <ul>
-              <li className="navbarText-about">About</li>
-              <li className="navbarText-product">Our Products</li>
-              <li className="navbarText-token">Token Utility</li>
-              <li className="navbarText-roadmap">Roadmap</li>
-            </ul>
-
-            <button className="cntwlt">Connect Wallet</button>
+    <main className="">
+      <Hero />
+      <div className=" bg-gradient-to-r from-YellowLightShade to-customLightDark">
+        <OurProduct />
+        <div className="relative">
+          <Ourtoken />
+          <div className="relative top-20 z-20 continuously-animation">
+            <Image src={union} alt="" />
           </div>
+          <ContactUsBox />
         </div>
-        <div className="HeroHome">
-          {/* <Image alt="square" src="/Union2.png" width={237} height={237} className="union"/> */}
+        <BottomIcon />
 
-          <div className="titleBox">
-          <Image
-                    src="/house.png"
-                    width={320}
-                    height={100}
-                    alt="bitcoin-house"
-                    className="house"
-                  />
-            <div className="titleText">
-              <span className="gateway">YOUR GATEWAY</span>
-              
-                <span className="to">TO</span>
-                <span className="bottom-heading">
-
-              <span className="defi on">DEFI ON
-              
-              </span>
-              <span className="bitcoin"> BITCOIN</span>
-                </span>
-            </div>
-          </div>
-          
-        </div>
+   
       </div>
     </main>
   );
